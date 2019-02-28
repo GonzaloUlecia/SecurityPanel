@@ -1,0 +1,203 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* securitypanel
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20181017\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-27 08:57+0000\n"
+"PO-Revision-Date: 2019-02-27 10:14+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Language: en\n"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_apellidos
+msgid "Apellidos"
+msgstr "Lastname"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_create_uid
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_create_uid
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_create_date
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_create_date
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_description
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_description
+msgid "Description"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_display_name
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_display_name
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_dni
+msgid "Dni"
+msgstr "Dni"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_equipo
+msgid "Equipo"
+msgstr "Device"
+
+#. module: securitypanel
+#: model:ir.ui.menu,name:securitypanel.menu_1_list
+msgid "Equipos"
+msgstr "Devices"
+
+#. module: securitypanel
+#: sql_constraint:securitypanel.responsable:0
+msgid "Ese dni ya existe"
+msgstr "That dni already exists"
+
+#. module: securitypanel
+#: sql_constraint:securitypanel.equipo:0
+#: sql_constraint:securitypanel.planificador:0
+msgid "Ese id ya existe"
+msgstr "That ID already exists"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_estado
+msgid "Estado"
+msgstr "State"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_fechaInstalacion
+msgid "Fecha de instalacion"
+msgstr "Instalation date"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_fechaInstalacion
+msgid "Fecha prevista"
+msgstr "Scheduled date"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_id
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_id
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_id
+msgid "ID"
+msgstr "ID"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_imagen
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_imagen
+msgid "Imagen"
+msgstr "Imagen"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo___last_update
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador___last_update
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_write_uid
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_write_uid
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_write_date
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_write_date
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.ui.menu,name:securitypanel.menu_1
+msgid "Lista de Equipos"
+msgstr "Devices List"
+
+#. module: securitypanel
+#: model:ir.ui.menu,name:securitypanel.menu_2
+msgid "Lista de Responsables"
+msgstr "Owner List"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_planificador
+msgid "Modificacion Planificada"
+msgstr "planned modification"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_nombre
+msgid "Nombre"
+msgstr "Name"
+
+#. module: securitypanel
+#: model:ir.ui.menu,name:securitypanel.menu_1_list_plan
+msgid "Planificación de intervenciones"
+msgstr "Planning of interventions"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_realizado
+msgid "Realizado"
+msgstr "Done"
+
+#. module: securitypanel
+#: model:ir.ui.view,arch_db:securitypanel.list_planificados
+msgid "Realizar"
+msgstr "Do"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_planificador_responsable
+#: model:ir.ui.menu,name:securitypanel.menu_2_list
+msgid "Responsables"
+msgstr "Owner"
+
+#. module: securitypanel
+#: model:ir.ui.menu,name:securitypanel.menu_root
+msgid "Security Panel"
+msgstr "Security Panel"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_equipo_sistema
+msgid "Sistema"
+msgstr "System"
+
+#. module: securitypanel
+#: model:ir.model.fields,field_description:securitypanel.field_securitypanel_responsable_telefono
+msgid "Telefono"
+msgstr "Phone"
+
+#. module: securitypanel
+#: model:ir.actions.act_window,name:securitypanel.equipos_action_window
+#: model:ir.actions.act_window,name:securitypanel.planificados_action_window
+#: model:ir.actions.act_window,name:securitypanel.responsables_action_window
+msgid "securitypanel window"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model,name:securitypanel.model_securitypanel_equipo
+msgid "securitypanel.equipo"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model,name:securitypanel.model_securitypanel_planificador
+msgid "securitypanel.planificador"
+msgstr ""
+
+#. module: securitypanel
+#: model:ir.model,name:securitypanel.model_securitypanel_responsable
+msgid "securitypanel.responsable"
+msgstr ""

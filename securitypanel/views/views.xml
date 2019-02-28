@@ -1,0 +1,154 @@
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="securitypanel.list">
+      <field name="name">securitypanel list</field>
+      <field name="model">securitypanel.securitypanel</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+
+
+
+    <record model="ir.ui.view" id="securitypanel.list">
+      <field name="name">Lista Equipos</field>
+      <field name="model">securitypanel.equipo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="imagen" widget="image" height="50" width="50"/>
+          <field name="id"/>
+          <field name="sistema"/>
+          <field name="fechaInstalacion"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="securitypanel.list_responsable">
+      <field name="name">Lista Responsables</field>
+      <field name="model">securitypanel.responsable</field>
+      <field name="arch" type="xml">
+        <tree editable="top">
+          <field name="imagen" widget="image" height="50" width="50"/>
+          <field name="dni"/>
+          <field name="nombre"/>
+          <field name="apellidos"/>
+          <field name="telefono"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="securitypanel.list_planificados">
+      <field name="name">Planificacion de Intervenciones</field>
+      <field name="model">securitypanel.planificador</field>
+      <field name="arch" type="xml">
+
+        <tree decoration-success="estado == 'Realizado'" decoration-danger="estado == 'No realizado'">
+            <button string="Realizar" name="botonRealizar" type="object" class="oe_right"/>
+          <field name="id"/>
+          <field name="realizado"/>
+          <field name="estado"/>
+          <field name="fechaInstalacion"/>
+          <field name="description"/>
+        </tree>
+
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="securitypanel.action_window">
+      <field name="name">securitypanel window</field>
+      <field name="res_model">securitypanel.securitypanel</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+
+
+
+
+    <record model="ir.actions.act_window" id="securitypanel.equipos_action_window">
+      <field name="name">securitypanel window</field>
+      <field name="res_model">securitypanel.equipo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="securitypanel.responsables_action_window">
+      <field name="name">securitypanel window</field>
+      <field name="res_model">securitypanel.responsable</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="securitypanel.planificados_action_window">
+      <field name="name">securitypanel window</field>
+      <field name="res_model">securitypanel.planificador</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="securitypanel.action_server">
+      <field name="name">securitypanel server</field>
+      <field name="model_id" ref="model_securitypanel_securitypanel"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="securitypanel" id="securitypanel.menu_root"/>
+    -->
+
+
+    <menuitem name="Security Panel" id="securitypanel.menu_root"/>
+
+
+
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="securitypanel.menu_1" parent="securitypanel.menu_root"/>
+    <menuitem name="Menu 2" id="securitypanel.menu_2" parent="securitypanel.menu_root"/>
+    -->
+
+    <menuitem name="Lista de Equipos" id="securitypanel.menu_1" parent="securitypanel.menu_root"/>
+    <menuitem name="Lista de Responsables" id="securitypanel.menu_2" parent="securitypanel.menu_root"/>
+
+
+
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="securitypanel.menu_1_list" parent="securitypanel.menu_1"
+              action="securitypanel.action_window"/>
+    <menuitem name="Server to list" id="securitypanel" parent="securitypanel.menu_2"
+              action="securitypanel.action_server"/>
+    -->
+
+    <menuitem name="Equipos" id="securitypanel.menu_1_list" parent="securitypanel.menu_1"
+              action="securitypanel.equipos_action_window"/>
+    <menuitem name="Planificación de intervenciones" id="securitypanel.menu_1_list_plan" parent="securitypanel.menu_1"
+              action="securitypanel.planificados_action_window"/>
+    <menuitem name="Responsables" id="securitypanel.menu_2_list" parent="securitypanel.menu_2"
+              action="securitypanel.responsables_action_window"/>
+
+
+  </data>
+</odoo>
