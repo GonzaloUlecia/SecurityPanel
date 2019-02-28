@@ -31,8 +31,6 @@ class responsable(models.Model):
     nombre = fields.Char(String="Nombre", required = True)
     apellidos = fields.Char(String="Apellidos")
     telefono = fields.Integer(String="Telefono")
-    _sql_constraints = [
-         ('PK_NM', 'unique (dni)','Ese dni ya existe')]
 
 class planificador(models.Model):
     _name = 'securitypanel.planificador'
