@@ -1,0 +1,108 @@
+<odoo>
+    <data>
+
+  <record id="e1" model="securitypanel.equipo">
+     <field name="sistema">Windows 7</field>
+     <field name="description">Equipo instalado en la planta de administración</field>
+     <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+    <field name="fechaInstalacion">2014-09-01</field>
+   </record>
+
+   <record id="e2" model="securitypanel.equipo">
+      <field name="sistema">Ubuntu</field>
+      <field name="description">Equipo del administrador de red, acceso restringido</field>
+      <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+     <field name="fechaInstalacion">2016-04-02</field>
+    </record>
+
+    <record id="e3" model="securitypanel.equipo">
+       <field name="sistema">Windows 10</field>
+       <field name="description">Equipo de departamento Ejecutivo</field>
+       <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+      <field name="fechaInstalacion">2016-08-02</field>
+     </record>
+
+     <record id="e4" model="securitypanel.equipo">
+        <field name="sistema">Windows XP</field>
+        <field name="description">Equipo de departamento Marketing</field>
+        <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+       <field name="fechaInstalacion">2012-04-02</field>
+      </record>
+
+    <record id="r1" model="securitypanel.responsable">
+       <field name="dni">16653568R</field>
+       <field name="nombre">Roberto</field>
+       <field name="apellidos">Calvo</field>
+       <field name="telefono">667654324</field>
+     </record>
+
+     <record id="r2" model="securitypanel.responsable">
+        <field name="dni">16677348S</field>
+        <field name="nombre">Juan</field>
+        <field name="apellidos">Guijarro</field>
+        <field name="telefono">675458321</field>
+      </record>
+
+      <record id="r3" model="securitypanel.responsable">
+         <field name="dni">14432568R</field>
+         <field name="nombre">Alvaro</field>
+         <field name="apellidos">Magallanes</field>
+         <field name="telefono">667654324</field>
+       </record>
+
+       <record id="r4" model="securitypanel.responsable">
+          <field name="dni">16654634S</field>
+          <field name="nombre">Adrian</field>
+          <field name="apellidos">Llanos</field>
+          <field name="telefono">675458321</field>
+        </record>
+
+      <record id="1" model="securitypanel.planificador">
+         <field name="descripcion">Chequeo para revisión del iso27001</field>
+         <field name="realizado">False</field>
+         <field name="equipo" ref="e1"></field>
+         <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+        <field name="fechaInstalacion">2020-09-01</field>
+       </record>
+
+       <record id="2" model="securitypanel.planificador">
+          <field name="descripcion">Auditoria del equipo</field>
+          <field name="realizado">False</field>
+          <field name="equipo" ref="e1"></field>
+          <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+         <field name="fechaInstalacion">2017-09-01</field>
+        </record>
+
+        <record id="3" model="securitypanel.planificador">
+           <field name="descripcion">Actualizacion y parcheo</field>
+           <field name="realizado">True</field>
+           <field name="equipo" ref="e2"></field>
+           <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+          <field name="fechaInstalacion">2019-09-01</field>
+         </record>
+         <record id="4" model="securitypanel.planificador">
+            <field name="descripcion">Chequeo para revisión del iso27001</field>
+            <field name="realizado">False</field>
+            <field name="equipo" ref="e1"></field>
+            <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+           <field name="fechaInstalacion">2020-06-07</field>
+          </record>
+
+          <record id="5" model="securitypanel.planificador">
+             <field name="descripcion">Auditoria del equipo</field>
+             <field name="realizado">False</field>
+             <field name="equipo" ref="e3"></field>
+             <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+            <field name="fechaInstalacion">2016-11-11</field>
+           </record>
+
+           <record id="6" model="securitypanel.planificador">
+              <field name="descripcion">Actualizacion y parcheo</field>
+              <field name="realizado">True</field>
+              <field name="equipo" ref="e4"></field>
+              <field name="fechaInstalacion" eval="time.strftime('%Y-01-01')" />
+             <field name="fechaInstalacion">2016-03-07</field>
+            </record>
+
+          </data>
+      </odoo>
